@@ -4,10 +4,8 @@
 package com.user.models;
 
 import java.math.BigDecimal;
-import java.util.Currency;
 import java.util.Date;
-
-import com.expenditure.commons.enums.ExpenseType;
+import java.util.List;
 
 /**
  * @author bharath.kk
@@ -25,6 +23,7 @@ public class User {
 	private Address address;
 	private String phone;
 	private String email;
+	private List<Savings> savings;
 
 	/**
 	 * @return the userId
@@ -41,7 +40,6 @@ public class User {
 		this.userId = userId;
 	}
 
-	
 	/**
 	 * @return the userName
 	 */
@@ -50,7 +48,8 @@ public class User {
 	}
 
 	/**
-	 * @param userName the userName to set
+	 * @param userName
+	 *            the userName to set
 	 */
 	public void setUserName(String userName) {
 		this.userName = userName;
@@ -174,6 +173,21 @@ public class User {
 	 */
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	/**
+	 * @return the savings
+	 */
+	public List<Savings> getSavings() {
+		return savings;
+	}
+
+	/**
+	 * @param savings
+	 *            the savings to set
+	 */
+	public void setSavings(List<Savings> savings) {
+		this.savings = savings;
 	}
 
 }

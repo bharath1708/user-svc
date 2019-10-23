@@ -1,10 +1,10 @@
-package com.expenditure;
+package com.user;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ExpenditureApplicationTests {
+class UserApplicationTests {
 
 	@Test
 	void contextLoads() {
